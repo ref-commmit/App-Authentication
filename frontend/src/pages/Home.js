@@ -56,6 +56,7 @@ function StatusIndicator({ status }) {
       display: "flex",
       alignItems: "center",
       gap: "6px",
+      
     },
     dot: {
       width: "8px",
@@ -100,8 +101,9 @@ function Home() {
   const styles = {
     container: {
       padding: "20px",
-      maxWidth: "1200px",
+      widht: "100vw",
       margin: "0 auto",
+      backgroundColor:"white"
     },
     table: {
       width: "100vw",

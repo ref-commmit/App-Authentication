@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import { handleError, handleSuccess } from "../utils";
+import "./Signup.css";
 
 function Signup() {
   const [signupInfo, setSignupInfo] = useState({
@@ -60,8 +61,8 @@ function Signup() {
   };
 
   return (
-    <div className="container">
-      <h1>Signup</h1>
+    <div className="container" style={{ backgroundColor: "#172a45" }}>
+      <h1 style={{color:"rgb(255, 255, 255)"}}>Signup</h1>
       <form onSubmit={handleSignup}>
         <div>
           <label htmlFor="name">Name</label>
@@ -108,8 +109,8 @@ function Signup() {
         </div>
 
         <button type="submit">Signup</button>
-        <span>
-          Already have an account ?<Link to="/login">Login</Link>
+        <span style={{ textAlign: "center" }}>
+          <Link to="/login" style={{color:"white"}}> Already have an account ?</Link>
         </span>
       </form>
 
